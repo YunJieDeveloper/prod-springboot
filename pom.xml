@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.10.RELEASE</version>
+        <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.prod.springboot</groupId>
+    <artifactId>prod-springboot</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>prod-server</module>
+        <module>prod-common</module>
+    </modules>
+    <!--统一管理版本号-->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <commons-lang3-version>3.5</commons-lang3-version>
+        <druid.version>1.1.1</druid.version>
+        <joda-time.version>2.9.9</joda-time.version>
+        <guava.version>19.0</guava.version>
+        <jedis-version>2.9.0</jedis-version>
+        <validation.version>1.1.0.Final</validation.version>
+        <swagger-version>2.6.1</swagger-version>
+        <okhttp3.version>3.4.1</okhttp3.version>
+        <retrofit2.version>2.1.0</retrofit2.version>
+        <asynchttp.version>1.9.40</asynchttp.version>
+        <consul.client.version>1.2.3</consul.client.version>
+    </properties>
+
+    <!--声明子工程种可能使用到的依赖 版本统一管理，子模块中无需指定版本号-->
+    <dependencyManagement>
+        <dependencies>
+            <!--声明子模块版本-->
+            <dependency>
+                <groupId>com.prod.springboot</groupId>
+                <artifactId>prod-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.prod.springboot</groupId>
+                <artifactId>prod-server</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- swaggerUI 整合-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger-version}</version>
+            </dependency>
+
+
+            <!-- consul orbitz需要的包 -->
+            <dependency>
+                <groupId>com.orbitz.consul</groupId>
+                <artifactId>consul-client</artifactId>
+                <version>0.10.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.glassfish.jersey.core</groupId>
+                <artifactId>jersey-client</artifactId>
+                <version>2.22.2</version>
+            </dependency>
+
+            <!-- validation-api -->
+            <dependency>
+                <groupId>javax.validation</groupId>
+                <artifactId>validation-api</artifactId>
+                <version>${validation.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
