@@ -1,15 +1,13 @@
-package com.prod.springboot.prod.config;
+package com.prod.springboot.prod.config.consul;
 
 
 import com.google.common.base.Strings;
 import com.google.common.net.HostAndPort;
 import com.orbitz.consul.Consul;
+import com.prod.springboot.prod.config.consul.ConsulConfigProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;

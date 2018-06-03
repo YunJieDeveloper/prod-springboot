@@ -37,8 +37,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
 
-
+		<!-- 兄弟项目-->
 		<dependency>
 			<groupId>com.prod.springboot</groupId>
 			<artifactId>prod-common</artifactId>

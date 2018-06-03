@@ -81,6 +81,8 @@
                 <artifactId>validation-api</artifactId>
                 <version>${validation.version}</version>
             </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 </project>

@@ -1,4 +1,4 @@
-package com.prod.springboot.prod.controller;
+package com.prod.springboot.prod.controller.consul;
 
 
 import com.orbitz.consul.model.health.ServiceHealth;

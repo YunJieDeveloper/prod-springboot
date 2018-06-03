@@ -1,4 +1,4 @@
-package com.prod.springboot.prod.config;
+package com.prod.springboot.prod.config.consul;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
