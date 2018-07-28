@@ -47,6 +47,10 @@
 			<groupId>com.prod.springboot</groupId>
 			<artifactId>prod-common</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.prod.springboot</groupId>
+			<artifactId>prod-dao</artifactId>
+		</dependency>
 
 		<!-- swaggerUI 整合-->
 		<dependency>
@@ -67,7 +71,14 @@
 			<groupId>org.glassfish.jersey.core</groupId>
 			<artifactId>jersey-client</artifactId>
 		</dependency>
-		<!--lombok插件 spring 框架已声明版本，无需指定版本号，以免冲突-->
+		<!--健康检查-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
+
+		<!--lombok插件 spring框架1.5版本以上 已声明版本，无需指定版本号，以免冲突-->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>

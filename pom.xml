@@ -16,6 +16,7 @@
     <modules>
         <module>prod-server</module>
         <module>prod-common</module>
+        <module>prod-dao</module>
     </modules>
     <!--统一管理版本号-->
     <properties>
@@ -49,6 +50,11 @@
                 <artifactId>prod-server</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.prod.springboot</groupId>
+                <artifactId>prod-dao</artifactId>
+                <version>${project.version}</version>
+            </dependency>
 
             <!-- swaggerUI 整合-->
             <dependency>
@@ -75,14 +81,37 @@
                 <version>2.22.2</version>
             </dependency>
 
+            <!--mysql-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>5.1.25</version>
+            </dependency>
+            <!-- 数据库连接池c3p0 -->
+            <dependency>
+                <groupId>com.mchange</groupId>
+                <artifactId>c3p0</artifactId>
+                <version>0.9.5.2</version>
+            </dependency>
+
             <!-- validation-api -->
             <dependency>
                 <groupId>javax.validation</groupId>
                 <artifactId>validation-api</artifactId>
                 <version>${validation.version}</version>
             </dependency>
+            <!-- 谷歌开源工具包 -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
 
-
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3-version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>

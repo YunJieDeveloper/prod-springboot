@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="prod-common" />
+        <module name="prod-dao" />
         <module name="prod-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="prod-common" target="1.8" />
+      <module name="prod-dao" target="1.8" />
       <module name="prod-server" target="1.8" />
       <module name="prod-springboot" target="1.8" />
     </bytecodeTargetLevel>

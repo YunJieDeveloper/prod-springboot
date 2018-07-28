@@ -3,7 +3,7 @@ package com.prod.springboot.prod.service.consul;
 
 import com.orbitz.consul.*;
 import com.orbitz.consul.model.health.ServiceHealth;
-import com.prod.springboot.prod.config.consul.ConsulConfigProperties;
+import com.prod.springboot.prod.utils.consul.ConsulConfigProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

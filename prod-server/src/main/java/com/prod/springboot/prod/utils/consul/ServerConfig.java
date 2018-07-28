@@ -1,10 +1,9 @@
-package com.prod.springboot.prod.config.consul;
+package com.prod.springboot.prod.utils.consul;
 
 
 import com.google.common.base.Strings;
 import com.google.common.net.HostAndPort;
 import com.orbitz.consul.Consul;
-import com.prod.springboot.prod.config.consul.ConsulConfigProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -66,7 +65,7 @@ public class ServerConfig {
                 log.error("Connect to consul failed, boot aborted!");
                 throw new RuntimeException(e);
             }
-            log.info("Connect to consul failed. service.tag={}, load config from classpath", "local");
+            log.info("Connect to consul failed. service.tag={}, load utils from classpath", "local");
             return null;
         }
     }

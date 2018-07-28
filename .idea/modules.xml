@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/prod-common/prod-common.iml" filepath="$PROJECT_DIR$/prod-common/prod-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/prod-dao/prod-dao.iml" filepath="$PROJECT_DIR$/prod-dao/prod-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/prod-server/prod-server.iml" filepath="$PROJECT_DIR$/prod-server/prod-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/prod-springboot.iml" filepath="$PROJECT_DIR$/prod-springboot.iml" />
     </modules>

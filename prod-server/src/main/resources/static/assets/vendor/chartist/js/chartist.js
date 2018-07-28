@@ -568,7 +568,7 @@ var Chartist = {
    * @return {Object} An object that contains the highest and lowest value that will be visualized on the chart.
    */
   Chartist.getHighLow = function (data, options, dimension) {
-    // TODO: Remove workaround for deprecated global high / low config. Axis high / low configuration is preferred
+    // TODO: Remove workaround for deprecated global high / low utils. Axis high / low configuration is preferred
     options = Chartist.extend({}, options, dimension ? options['axis' + dimension.toUpperCase()] : {});
 
     var highLow = {
@@ -1901,7 +1901,7 @@ var Chartist = {
     }.bind(this));
 
     // Before the first chart creation we need to register us with all plugins that are configured
-    // Initialize all relevant plugins with our chart object and the plugin options specified in the config
+    // Initialize all relevant plugins with our chart object and the plugin options specified in the utils
     if(this.options.plugins) {
       this.options.plugins.forEach(function(plugin) {
         if(plugin instanceof Array) {

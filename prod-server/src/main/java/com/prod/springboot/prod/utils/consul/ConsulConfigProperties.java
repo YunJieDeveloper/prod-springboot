@@ -1,10 +1,9 @@
-package com.prod.springboot.prod.config.consul;
+package com.prod.springboot.prod.utils.consul;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Configuration;
 
 import javax.validation.constraints.NotNull;
 

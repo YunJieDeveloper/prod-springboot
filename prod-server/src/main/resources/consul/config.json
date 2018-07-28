@@ -1,0 +1,18 @@
+{
+  "acl_datacenter": "east1",
+  "acl_agent_token": "8171e90c-4ea3-9df2-1424-6e96b284c50e",
+  "acl_down_policy": "extend-cache",
+  "bind_addr": "127.0.0.1",
+  "datacenter": "east1",
+  "data_dir": "/tmp/consul",
+  "encrypt": "1Um5ETioY97p39KGneuOpA==",
+  "log_level": "INFO",
+  "server": false,
+  "rejoin_after_leave": true,
+  "retry_join": [
+    "192.168.0.70",
+    "192.168.0.71",
+    "192.168.0.72"
+  ]
+}
+
